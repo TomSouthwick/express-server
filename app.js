@@ -42,7 +42,9 @@ app.post("/notes", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send(
+    `<p>Visit /notes (within url) to see notes"</p><p> POST {"note": "I have a massive database"} to /notes to add a note</p>`
+  );
 });
 
 app.listen(port, () => {
