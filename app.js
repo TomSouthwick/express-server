@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+var port = process.env.PORT || 8080;
 var fs = require("fs");
 
 app.use(express.json());
