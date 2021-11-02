@@ -43,7 +43,7 @@ app.post("/notes", (req, res) => {
 
 app.get("/", (req, res) => {
   res.send(
-    `<p>GET /notes to see notes"</p><p> POST {"note": "I have a massive database"} to /notes to add a note</p>`
+    `<p>GET /notes to see notes</p><p> POST {"note": "I have a massive database"} to /notes to add a note</p>`
   );
 });
 
